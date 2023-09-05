@@ -1,0 +1,1 @@
+export { useGetTimetable } from './search'
