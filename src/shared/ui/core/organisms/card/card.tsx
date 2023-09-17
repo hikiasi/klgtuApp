@@ -13,10 +13,6 @@ const Card = ({ children }: TCard) => {
   );
 };
 const Wrapper = styled.div`
-display: flex;
-width: 1140px;
-align-items: flex-start;
-gap: 24px;
   
 `
 

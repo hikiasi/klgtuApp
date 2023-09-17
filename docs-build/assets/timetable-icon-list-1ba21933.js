@@ -1,0 +1,2 @@
+import{j as o}from"./jsx-runtime-6eef64cc.js";import{b as s,c as a,d as n,e as c,f as r,g as t,h as e,i,j as x,k as j,l as I,m as d,n as f,o as m,p}from"./icon-workshop-pe-bc270cda.js";const k={exam:o.jsx(s,{}),other:o.jsx(a,{}),credit:o.jsx(n,{}),unknown:o.jsx(c,{}),window:o.jsx(r,{}),consult:o.jsx(t,{}),dayOff:o.jsx(e,{}),holiday:o.jsx(i,{}),lecture:o.jsx(x,{}),distance:o.jsx(j,{}),workshop:o.jsx(I,{}),workshopPe:o.jsx(d,{}),toNPair:o.jsx(f,{}),laboratory:o.jsx(m,{}),diffCredit:o.jsx(p,{})};export{k as T};
+//# sourceMappingURL=timetable-icon-list-1ba21933.js.map
