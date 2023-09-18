@@ -10,18 +10,18 @@ const AccordionComponent = ({ }: TAccordionComponent) => {
     <Accordion defaultActiveKey='1'>
       <Accordion.Item eventKey='1'>
         <Accordion.Header>
-          asdfasdfasdf
+          Проверка1
         </Accordion.Header>
         <Accordion.Body>
-          asdfasdfas
+          Проверка11
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey='2'>
         <Accordion.Header>
-          asdfasfbv
+          Проверка2
         </Accordion.Header>
         <Accordion.Body>
-          asdfas
+          Проверка22
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

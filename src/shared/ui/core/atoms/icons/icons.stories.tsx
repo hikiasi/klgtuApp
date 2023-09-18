@@ -11,6 +11,7 @@ const CommonIconsList = ({ }) => {
       {CommonIcons.map(item => item)}
       <Divider />
       {TimetableIcons.map(item => item)}
+      <Divider />
     </Wrapper>
   )
 }
