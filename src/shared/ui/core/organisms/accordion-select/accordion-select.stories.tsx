@@ -13,6 +13,12 @@ type TAccordionComponent = {
       telegramIcon?: boolean;
       webIcon?: boolean;
     }[];
+    statistics?: {
+      platform: string;
+      all: number;
+      day: number;
+      month: number;
+    }[];
   }[];
 };
 
@@ -26,9 +32,9 @@ const AccordionComponent = ({ items }: TAccordionComponent) => {
             {item.chapter === "main-goal" ? (
               <Accordion.Info>{item.infoText}</Accordion.Info>
             ) : (
-              item.teamMembers && (
-                <div>
-                  {item.teamMembers.map((teamMember, memberIndex) => (
+              <div>
+                {item.teamMembers &&
+                  item.teamMembers.map((teamMember, memberIndex) => (
                     <Accordion.Team
                       key={memberIndex}
                       name={teamMember.name}
@@ -37,8 +43,18 @@ const AccordionComponent = ({ items }: TAccordionComponent) => {
                       webIcon={teamMember.webIcon}
                     />
                   ))}
-                </div>
-              )
+                {item.statistics &&
+                  item.statistics.map((stats, statsIndex) => (
+                    <Accordion.Stat
+                      key={statsIndex}
+                      platform={stats.platform}
+                      all={stats.all}
+                      day={stats.day}
+                      month={stats.month}
+                    />
+                  ))}
+                  <Accordion.FootNote />
+              </div>
             )}
           </Accordion.Body>
         </Accordion.Item>
@@ -111,6 +127,24 @@ export const Default: TAccordionComponentStory = {
             position: "Frontend / Web",
             telegramIcon: true,
             webIcon: false,
+          },
+        ],
+      },
+      {
+        title: "Статистика по платформам",
+        chapter: "statistics",
+        statistics: [
+          {
+            platform: "Android",
+            all: 758,
+            day: 227,
+            month: 635,
+          },
+          {
+            platform: "iOS",
+            all: 982,
+            day: 356,
+            month: 865,
           },
         ],
       },

@@ -10,9 +10,9 @@ const AccordionInfo = forwardRef<HTMLDivElement, TAccordionInfo>(
   ({ children, ...props }, ref) => {
     return (
         <Wrapper ref={ref} {...props}>
-          <Typography variant="body" type="light">
+          {/* <Typography variant="body" type="light"> */}
             {children}
-          </Typography>
+          {/* </Typography> */}
         </Wrapper>
     );
   }
